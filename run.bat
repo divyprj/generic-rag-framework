@@ -10,8 +10,10 @@ set "EXTRA_ARGS="
 if "%DATASET%"=="" set "DATASET=quantum"
 if "%PROVIDER%"=="" set "PROVIDER=groq"
 
-for %%A in (%*) do (
-    if /I "%%~A"=="--fallback" set "EXTRA_ARGS=--fallback"
+for %%a in (%*) do (
+    if /i "%%a"=="--fallback" set "EXTRA_ARGS=!EXTRA_ARGS! --fallback"
+    if /i "%%a"=="--ingest" set "EXTRA_ARGS=!EXTRA_ARGS! --ingest"
+    if /i "%%a"=="-i" set "EXTRA_ARGS=!EXTRA_ARGS! --ingest"
 )
 
 echo.
