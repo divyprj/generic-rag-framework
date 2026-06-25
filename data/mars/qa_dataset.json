@@ -1,0 +1,144 @@
+{
+  "metadata": {
+    "domain": "Mars Exploration Missions",
+    "num_questions": 15,
+    "question_types": ["factual", "comparison", "multi-document", "temporal", "reasoning"]
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "question": "What was the first spacecraft to successfully fly by Mars, and how many photographs did it take?",
+      "expected_answer": "NASA's Mariner 4 was the first spacecraft to successfully fly by Mars. It launched on November 28, 1964, and performed the flyby on July 14-15, 1965, passing within 9,846 kilometers of the surface. The spacecraft captured 22 close-up photographs covering about 1 percent of the Martian surface, revealing a cratered, Moon-like landscape.",
+      "key_facts": ["Mariner 4", "November 28, 1964", "July 14", "1965", "9,846", "22", "photographs"],
+      "relevant_doc_ids": ["01"],
+      "difficulty": "easy",
+      "type": "factual"
+    },
+    {
+      "id": "q02",
+      "question": "Where did the Curiosity rover land, and what is the name of the central mound in its landing crater?",
+      "expected_answer": "Curiosity landed on August 6, 2012, inside Gale Crater, a 154-kilometer-diameter impact crater. At the center of Gale Crater rises Aeolis Mons, informally known as Mount Sharp, a 5.5-kilometer-tall mound of layered sedimentary deposits that records hundreds of millions of years of Martian geological history.",
+      "key_facts": ["August 6, 2012", "Gale Crater", "154", "Aeolis Mons", "Mount Sharp", "5.5"],
+      "relevant_doc_ids": ["03"],
+      "difficulty": "easy",
+      "type": "factual"
+    },
+    {
+      "id": "q03",
+      "question": "What did the MOXIE instrument on Perseverance achieve?",
+      "expected_answer": "MOXIE (Mars Oxygen In-Situ Resource Utilization Experiment) produced molecular oxygen from atmospheric carbon dioxide through solid oxide electrolysis. In its initial run on April 20, 2021, MOXIE produced 5.4 grams of oxygen in one hour. Over 16 extraction runs through August 2023, it produced a cumulative 122 grams of oxygen at purities of 98 percent or higher, validating the technology for future human missions.",
+      "key_facts": ["MOXIE", "oxygen", "carbon dioxide", "April 20, 2021", "5.4 grams", "122 grams", "98 percent", "16"],
+      "relevant_doc_ids": ["04"],
+      "difficulty": "easy",
+      "type": "factual"
+    },
+    {
+      "id": "q04",
+      "question": "How do the landing sites and key discoveries of Spirit and Opportunity compare?",
+      "expected_answer": "Spirit landed in Gusev Crater on January 3, 2004, where it explored Columbia Hills and discovered carbonates at the Comanche outcrop, providing evidence for past neutral-pH water. Opportunity landed in Meridiani Planum on January 25, 2004, where it discovered hematite spherules nicknamed 'blueberries' and found evidence of ancient acidic water in layered sulfate-rich sedimentary rocks. Spirit operated until 2010, while Opportunity lasted until 2018, completing over 5,111 sols and traveling 45.16 kilometers.",
+      "key_facts": ["Gusev Crater", "Meridiani Planum", "Columbia Hills", "Comanche", "carbonates", "hematite", "blueberries", "2010", "2018"],
+      "relevant_doc_ids": ["02"],
+      "difficulty": "medium",
+      "type": "comparison"
+    },
+    {
+      "id": "q05",
+      "question": "Compare the landing systems used by Curiosity and Perseverance. How did Perseverance improve upon Curiosity's approach?",
+      "expected_answer": "Both Curiosity and Perseverance used the sky crane landing system, where a rocket-powered descent stage lowers the rover on tethers from a hovering position. Perseverance enhanced this with Terrain-Relative Navigation (TRN), which compared real-time surface images against orbital maps during descent, enabling autonomous diversion from hazardous terrain. This reduced the landing ellipse from Curiosity's 20×7 kilometers to just 7.7×6.6 kilometers, allowing Perseverance to land safely within the geologically complex Jezero Crater.",
+      "key_facts": ["sky crane", "Terrain-Relative Navigation", "TRN", "20×7", "7.7×6.6", "Jezero Crater"],
+      "relevant_doc_ids": ["03", "04"],
+      "difficulty": "medium",
+      "type": "comparison"
+    },
+    {
+      "id": "q06",
+      "question": "Compare how the Schiaparelli lander failure differs from the Viking program's successful landings in terms of landing technology.",
+      "expected_answer": "The Viking landers in 1976 used retro-rockets for terminal descent and successfully touched down, with Viking 1 operating for 2,307 sols. Schiaparelli in 2016 was a technology demonstrator that used a combination of heat shield, parachute, and retro-rockets, but it crashed due to a saturation error in the Inertial Measurement Unit (IMU) during descent. The IMU generated a large, spurious angular rate measurement that was incorrectly processed by the flight software, causing the guidance system to believe the lander was below ground level, leading to premature parachute release and engine shutdown at an altitude of approximately 3.7 kilometers.",
+      "key_facts": ["Viking", "1976", "retro-rockets", "Schiaparelli", "2016", "IMU", "Inertial Measurement Unit", "3.7 kilometers"],
+      "relevant_doc_ids": ["01", "07"],
+      "difficulty": "medium",
+      "type": "comparison"
+    },
+    {
+      "id": "q07",
+      "question": "Which Mars missions have contributed to the search for water on Mars, and what evidence did each provide?",
+      "expected_answer": "Multiple missions have contributed to finding water on Mars. Viking orbiters discovered ancient river channels. Mars Odyssey's neutron spectrometer detected subsurface hydrogen indicating water ice. Phoenix lander in 2008 directly confirmed subsurface water ice by excavating bright material that sublimated. Opportunity found hematite spherules and clay minerals formed by water. Curiosity discovered evidence of an ancient lakebed in Gale Crater. MRO's HiRISE camera identified recurring slope lineae and seasonal features suggesting contemporary water processes.",
+      "key_facts": ["Viking", "Mars Odyssey", "Phoenix", "water ice", "Opportunity", "hematite", "Curiosity", "ancient lakebed", "MRO"],
+      "relevant_doc_ids": ["01", "02", "03", "05", "06"],
+      "difficulty": "medium",
+      "type": "multi-document"
+    },
+    {
+      "id": "q08",
+      "question": "Which Mars missions have used nuclear power sources, and why was this choice made over solar power?",
+      "expected_answer": "Curiosity and Perseverance both use Multi-Mission Radioisotope Thermoelectric Generators (MMRTGs), each producing approximately 110 watts of electrical power. The MMRTG uses 4.8 kilograms of plutonium-238 dioxide. Nuclear power was chosen because it enables year-round operations independent of dust storms, seasons, or latitude, and provides waste heat to keep instruments within operating temperatures during frigid Martian nights that can reach −90 °C. Earlier rovers like Spirit and Opportunity were solar-powered and were vulnerable to dust accumulation on panels and seasonal light reduction.",
+      "key_facts": ["Curiosity", "Perseverance", "MMRTG", "110 watts", "plutonium-238", "dust storms", "solar-powered", "Spirit", "Opportunity"],
+      "relevant_doc_ids": ["02", "03", "04"],
+      "difficulty": "medium",
+      "type": "multi-document"
+    },
+    {
+      "id": "q09",
+      "question": "What roles do Mars orbiters play in supporting surface missions, and which orbiters currently serve as communications relays?",
+      "expected_answer": "Mars orbiters serve as critical communications relays between surface missions and Earth. Mars Odyssey, the longest-serving Mars orbiter (arriving in 2001), relays data for surface missions. MRO (since 2006) is the primary relay, handling the majority of data from Curiosity and Perseverance through its high-gain antenna. The ESA's Trace Gas Orbiter (TGO) also provides relay services for Curiosity, Perseverance, and previously InSight. MAVEN (since 2014) provides backup relay capability. These orbiters enable surface missions to transmit far more data than would be possible through direct-to-Earth communication.",
+      "key_facts": ["Mars Odyssey", "MRO", "TGO", "Trace Gas Orbiter", "MAVEN", "relay", "communications"],
+      "relevant_doc_ids": ["06", "07"],
+      "difficulty": "medium",
+      "type": "multi-document"
+    },
+    {
+      "id": "q10",
+      "question": "List the major Mars surface missions in chronological order from the first successful landing to the most recent rover.",
+      "expected_answer": "The chronological order of major Mars surface missions: Viking 1 landed July 20, 1976; Viking 2 landed September 3, 1976; Mars Pathfinder/Sojourner landed July 4, 1997; Spirit landed January 3, 2004; Opportunity landed January 25, 2004; Phoenix landed May 25, 2008; Curiosity landed August 6, 2012; InSight landed November 26, 2018; Perseverance landed February 18, 2021.",
+      "key_facts": ["Viking 1", "1976", "Viking 2", "Pathfinder", "1997", "Spirit", "2004", "Opportunity", "Phoenix", "2008", "Curiosity", "2012", "InSight", "2018", "Perseverance", "2021"],
+      "relevant_doc_ids": ["01", "02", "03", "04", "05"],
+      "difficulty": "medium",
+      "type": "temporal"
+    },
+    {
+      "id": "q11",
+      "question": "What is the chronological history of powered flight demonstrations on Mars?",
+      "expected_answer": "The Ingenuity helicopter achieved the first powered, controlled flight on another planet on April 19, 2021, lasting 39.1 seconds and reaching an altitude of 3 meters. It was originally planned for up to five flights over 30 days but far exceeded expectations, completing 72 flights over nearly three years, accumulating over 128 minutes of flight time and covering more than 17 kilometers. Its mission ended on January 18, 2024, during its 72nd flight when it sustained rotor blade damage.",
+      "key_facts": ["Ingenuity", "April 19, 2021", "39.1 seconds", "3 meters", "72 flights", "128 minutes", "17 kilometers", "January 18, 2024"],
+      "relevant_doc_ids": ["04"],
+      "difficulty": "medium",
+      "type": "temporal"
+    },
+    {
+      "id": "q12",
+      "question": "How has the resolution of Mars surface imaging evolved from Mariner 4 to MRO's HiRISE camera?",
+      "expected_answer": "Mars imaging has undergone dramatic improvement. Mariner 4 in 1965 captured only 22 photographs of limited resolution. Mariner 9 in 1971 returned 7,329 images covering 85 percent of Mars at 1-3 kilometers per pixel. Mars Global Surveyor (1997) used MOLA for precise laser altimetry. MRO's HiRISE camera, operational since 2006, achieves a resolution of 25 centimeters per pixel, enabling identification of features smaller than a desk. This represents an improvement of several orders of magnitude over the earliest missions.",
+      "key_facts": ["Mariner 4", "22", "Mariner 9", "7,329", "1-3 kilometers", "HiRISE", "25 centimeters", "MRO"],
+      "relevant_doc_ids": ["01", "06"],
+      "difficulty": "medium",
+      "type": "temporal"
+    },
+    {
+      "id": "q13",
+      "question": "Why was Jezero Crater selected as the landing site for Perseverance, and how does this choice connect to the broader Mars Sample Return mission?",
+      "expected_answer": "Jezero Crater was selected because orbital observations revealed a prominent river delta on its western rim where an ancient river once flowed into a crater lake approximately 3.5 billion years ago. Delta deposits are among the best environments on Earth for preserving biosignatures, making Jezero ideal for astrobiology. Perseverance's sample caching system collects rock cores sealed in titanium sample tubes, with duplicates deposited at the Three Forks sample depot as backup. The Mars Sample Return campaign would send a Sample Retrieval Lander with a Mars Ascent Vehicle to retrieve these tubes and an Earth Return Orbiter to bring them to Earth for analysis beyond the capability of any instrument sent to Mars.",
+      "key_facts": ["Jezero Crater", "river delta", "3.5 billion", "biosignatures", "titanium sample tubes", "Three Forks", "Mars Ascent Vehicle", "Earth Return Orbiter"],
+      "relevant_doc_ids": ["04", "08"],
+      "difficulty": "hard",
+      "type": "reasoning"
+    },
+    {
+      "id": "q14",
+      "question": "What are the major technical challenges that must be overcome for a crewed Mars mission?",
+      "expected_answer": "Crewed Mars missions face numerous interconnected challenges. Radiation exposure during transit and surface stay poses cancer and central nervous system risks, with Curiosity's RAD measuring a surface dose of approximately 0.67 millisieverts per day, giving an annual surface dose of roughly 0.24 sieverts and a cumulative 3-year round-trip exposure of 1.0-1.2 sieverts, exceeding NASA's career limits. Entry, descent, and landing for heavy payloads (40+ metric tons) far exceeds current capabilities. Life support must sustain crews for 2-3 year round trips. Communication delays of 4-24 minutes prevent real-time mission control. ISRU propellant production requires manufacturing approximately 750 metric tons of propellant on Mars. Dust contamination threatens equipment and human health. Nuclear or large-scale solar power generation is needed to support surface operations.",
+      "key_facts": ["radiation", "0.67 millisieverts", "0.24 sieverts", "1.0-1.2 sieverts", "entry, descent, and landing", "life support", "communication delay", "ISRU", "750 metric tons", "dust", "nuclear"],
+      "relevant_doc_ids": ["03", "08"],
+      "difficulty": "hard",
+      "type": "reasoning"
+    },
+    {
+      "id": "q15",
+      "question": "What does the methane mystery on Mars tell us about the limitations of remote detection, and how have different missions provided conflicting data?",
+      "expected_answer": "The methane mystery highlights significant challenges in remote detection on Mars. Curiosity's SAM instrument measured background methane levels of approximately 0.41 parts per billion by volume and detected seasonal variations and occasional spikes up to about 7 ppbv. However, the ESA's Trace Gas Orbiter, specifically its NOMAD and ACS instruments, placed an upper limit on global methane of approximately 0.05 parts per billion by volume — far below Curiosity's detections. This discrepancy remains one of the most debated puzzles in Mars science, with possible explanations including rapid methane destruction at the surface, highly localized and transient emissions, or systematic measurement differences between ground-based and orbital instruments.",
+      "key_facts": ["methane", "Curiosity", "SAM", "0.41", "Trace Gas Orbiter", "NOMAD", "ACS", "0.05 parts per billion"],
+      "relevant_doc_ids": ["03", "07"],
+      "difficulty": "hard",
+      "type": "reasoning"
+    }
+  ]
+}

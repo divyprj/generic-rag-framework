@@ -1,0 +1,31 @@
+# Quantum Hardware Platforms
+
+## Superconducting Qubits: Leading the Race
+
+Superconducting qubits are the most widely deployed quantum computing technology, championed by industry giants IBM and Google. These qubits operate by encoding quantum information in the energy levels of superconducting circuits cooled to approximately 15 millikelvin, near absolute zero. In October 2019, Google achieved a historic milestone by demonstrating quantum supremacy using its 53-qubit Sycamore processor. The team, led by John Martinis, showed that Sycamore could perform a specific random circuit sampling task in 200 seconds that would take the world's most powerful classical supercomputer an estimated 10,000 years to complete. This result, published in the journal Nature, marked the first experimental demonstration that a quantum computer could outperform all classical computers on a specific task.
+
+IBM has pursued an aggressive roadmap for scaling superconducting quantum processors. In November 2021, IBM unveiled its 127-qubit Eagle processor, which was the first quantum processor to break the 100-qubit barrier. The Eagle processor used a new heavy-hex qubit layout to reduce errors and improve connectivity. In December 2023, IBM announced the 1,121-qubit Condor processor, the first quantum processor to exceed 1,000 qubits. The Condor processor demonstrated IBM's ability to scale qubit counts, though the company acknowledged that raw qubit numbers alone do not determine computational power — error rates and qubit connectivity are equally critical factors.
+
+## Trapped Ion Quantum Computers
+
+Trapped ion quantum computers represent one of the most precise approaches to quantum computation. In this technology, individual atoms are confined using electromagnetic fields in vacuum chambers and manipulated with precisely tuned laser beams. IonQ, founded in 2015 by Christopher Monroe and Jungsang Kim at the University of Maryland, has been a pioneer in commercializing trapped ion technology. IonQ's systems use ytterbium ions as qubits and have demonstrated some of the highest gate fidelities in the industry, with two-qubit gate fidelities exceeding 99.5%.
+
+Quantinuum, formed from the merger of Honeywell Quantum Solutions and Cambridge Quantum Computing in November 2021, operates the H-Series family of trapped ion quantum computers. The Quantinuum H2 processor, announced in 2023, features 56 qubits arranged in a unique racetrack architecture that enables all-to-all qubit connectivity. This full connectivity is a significant advantage over superconducting platforms, which typically have limited nearest-neighbor connectivity. Trapped ion systems generally have longer coherence times than superconducting qubits, often exceeding several seconds compared to microseconds for superconducting systems.
+
+## Photonic Quantum Computing
+
+Photonic quantum computing uses individual photons — particles of light — as qubits. This approach operates at room temperature, eliminating the need for expensive cryogenic cooling systems. Xanadu, a Canadian company founded in 2016 by Christian Weedbrook, has developed the Borealis photonic quantum processor. In June 2022, Xanadu demonstrated quantum computational advantage using Borealis, a 216-squeezed-mode photonic processor, performing a Gaussian boson sampling task that would be intractable for classical computers. This result was published in Nature and represented the first demonstration of quantum advantage using a photonic platform.
+
+PsiQuantum, founded in 2016 by Jeremy O'Brien, has taken a different approach by focusing on building a fault-tolerant, million-qubit photonic quantum computer using standard silicon photonics manufacturing processes. The company has partnered with GlobalFoundries to fabricate its photonic chips using existing semiconductor manufacturing infrastructure, arguing that photonic approaches offer the most viable path to manufacturing millions of qubits.
+
+## Topological Qubits: Microsoft's Bet
+
+Microsoft has pursued a fundamentally different approach to quantum computing through topological qubits. Unlike other qubit technologies, topological qubits encode quantum information in the topological properties of exotic quasiparticles called non-abelian anyons. In theory, topological qubits are inherently protected from local sources of noise and decoherence, which could dramatically reduce the overhead required for quantum error correction. In February 2025, Microsoft announced a breakthrough in topological quantum computing with the creation of a Majorana-based topological qubit, a significant step toward building hardware-protected qubits. Microsoft's approach remains the most speculative of the major platforms but offers potentially transformative advantages if the underlying physics can be fully harnessed.
+
+## Neutral Atom Quantum Computers
+
+Neutral atom quantum computing uses arrays of individual atoms held in place by focused laser beams called optical tweezers. QuEra Computing, founded in 2018 and spun out of Harvard University and MIT, is a leading company in this space. QuEra's approach uses rubidium atoms arranged in programmable two-dimensional arrays, enabling flexible qubit connectivity and natural scalability. In 2023, QuEra demonstrated a 256-qubit neutral atom quantum processor and announced plans for a 10,000-qubit system. Neutral atom platforms benefit from the identical nature of atoms — every rubidium atom is exactly the same — which simplifies manufacturing and calibration compared to engineered qubit systems. The technology has shown particular promise for quantum simulation tasks and combinatorial optimization problems.
+
+## The Diversity of Approaches
+
+The quantum computing hardware landscape in the mid-2020s is characterized by remarkable diversity. Each platform offers distinct advantages: superconducting qubits lead in speed and ecosystem maturity, trapped ions excel in gate fidelity and connectivity, photonic systems avoid cryogenic requirements, topological qubits promise inherent error protection, and neutral atoms offer natural scalability. This diversity suggests that the ultimate quantum computing architecture may depend on the specific application, much as classical computing employs different processor architectures for different workloads.
