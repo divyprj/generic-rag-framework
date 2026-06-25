@@ -69,7 +69,7 @@ def print_banner(
     title = Text()
     title.append("GENERIC RAG FRAMEWORK\n", style="bold white")
     title.append(
-        f"Dataset : {ds_config.name}  \u2022  "
+        f"Dataset : {ds_config.name}  |  "
         f"Provider : {provider_name} ({model_name})",
         style="dim white",
     )
@@ -81,7 +81,7 @@ def print_banner(
         title="[bold bright_cyan]RAG[/bold bright_cyan]",
         subtitle=(
             f"[dim]{config.EMBEDDING_MODEL.split('/')[-1]}"
-            f"  \u2022  ChromaDB[/dim]"
+            f"  |  ChromaDB[/dim]"
         ),
     ))
     console.print()
@@ -256,8 +256,8 @@ def display_result(result, question: str | None = None) -> None:
                 scores[i - 1] if i - 1 < len(scores) else 0.0
             )
             bar = (
-                "\u2588" * int(score * 10)
-                + "\u2591" * (10 - int(score * 10))
+                "#" * int(score * 10)
+                + "-" * (10 - int(score * 10))
             )
             source_lines.append(
                 f"  [cyan]{i}.[/cyan] {doc}  "
@@ -575,7 +575,7 @@ def main() -> None:
             f" Dataset '{args.dataset}' has issues:\n"
         )
         for err in errors:
-            console.print(f"  [red]\u2022[/red] {err}")
+            console.print(f"  [red]-[/red] {err}")
         console.print(
             "\nRun [cyan]--list-datasets[/cyan]"
             " to see available datasets."
