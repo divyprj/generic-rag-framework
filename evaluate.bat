@@ -1,13 +1,19 @@
 @echo off
-setlocal
+setlocal enabledelayedexpansion
 cd /d "%~dp0"
 
-rem Usage: evaluate.bat [dataset] [provider]
+rem Usage: evaluate.bat [dataset] [provider] [--ingest]
 set "DATASET=%~1"
 set "PROVIDER=%~2"
+set "EXTRA_ARGS="
 
 if "%DATASET%"=="" set "DATASET=quantum"
 if "%PROVIDER%"=="" set "PROVIDER=groq"
+
+for %%a in (%*) do (
+    if /i "%%a"=="--ingest" set "EXTRA_ARGS=!EXTRA_ARGS! --ingest"
+    if /i "%%a"=="-i" set "EXTRA_ARGS=!EXTRA_ARGS! --ingest"
+)
 
 echo.
 echo ============================================================
@@ -66,7 +72,7 @@ echo.
 echo ============================================================
 echo.
 
-"%PYTHON%" -m evaluation.run_evaluation --dataset "%DATASET%" --provider "%PROVIDER%"
+"%PYTHON%" -m evaluation.run_evaluation --dataset "%DATASET%" --provider "%PROVIDER%" !EXTRA_ARGS!
 if errorlevel 1 (
     echo.
     echo [ERROR] Evaluation failed. Check the errors above.

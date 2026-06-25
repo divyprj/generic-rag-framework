@@ -462,6 +462,11 @@ def main() -> None:
         default=None,
         help="Number of questions to evaluate (default: all).",
     )
+    parser.add_argument(
+        "--ingest", "-i",
+        action="store_true",
+        help="Force re-ingestion of documents before running evaluation",
+    )
     args = parser.parse_args()
     args.provider = args.provider.lower().strip()
 
@@ -540,7 +545,7 @@ def main() -> None:
     console.print("[green]Pipeline ready.[/green]")
 
     # Auto-ingest if needed
-    if not pipeline.is_indexed():
+    if args.ingest or not pipeline.is_indexed():
         console.print("Ingesting documents …")
         chunk_count = pipeline.ingest()
         console.print(f"[green]Indexed {chunk_count} chunks.[/green]\n")

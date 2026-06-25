@@ -1,5 +1,5 @@
 @echo off
-setlocal
+setlocal enabledelayedexpansion
 cd /d "%~dp0"
 
 rem Usage: run.bat [dataset] [provider] [--fallback]
@@ -68,7 +68,7 @@ echo        Type help for commands, quit to exit.
 echo.
 echo ============================================================
 echo.
-"%PYTHON%" app.py --dataset "%DATASET%" --provider "%PROVIDER%" %EXTRA_ARGS%
+"%PYTHON%" app.py --dataset "%DATASET%" --provider "%PROVIDER%" !EXTRA_ARGS!
 if errorlevel 1 (
     echo.
     echo [ERROR] Application exited with an error.

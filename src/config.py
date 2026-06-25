@@ -29,8 +29,8 @@ RESULTS_DIR: str = str(PROJECT_ROOT / "results")
 # ──────────────────────────────────────────────
 # Chunking
 # ──────────────────────────────────────────────
-CHUNK_SIZE: int = 500
-CHUNK_OVERLAP: int = 100
+CHUNK_SIZE: int = 1500
+CHUNK_OVERLAP: int = 300
 
 # ──────────────────────────────────────────────
 # Embedding
@@ -41,7 +41,7 @@ EMBEDDING_DIM: int = 384
 # ──────────────────────────────────────────────
 # Retrieval
 # ──────────────────────────────────────────────
-TOP_K: int = 3
+TOP_K: int = 4
 MIN_SIMILARITY_THRESHOLD: float = 0.3
 
 # ──────────────────────────────────────────────

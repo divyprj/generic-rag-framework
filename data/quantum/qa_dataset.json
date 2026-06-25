@@ -6,7 +6,8 @@
       "expected_answer": "Richard Feynman proposed the idea of quantum computing in May 1981 at the First Conference on Physics and Computation held at the Massachusetts Institute of Technology (MIT). He delivered a keynote address titled 'Simulating Physics with Computers' in which he argued that classical computers are fundamentally incapable of efficiently simulating quantum mechanical systems.",
       "key_facts": [
         "First Conference on Physics and Computation",
-        "Massachusetts Institute of Technology (MIT) in May 1981",
+        "MIT",
+        "May 1981",
         "Simulating Physics with Computers"
       ],
       "relevant_doc_ids": ["01"],
@@ -18,9 +19,11 @@
       "question": "What did Google's Sycamore processor achieve in October 2019?",
       "expected_answer": "In October 2019, Google demonstrated quantum supremacy using its 53-qubit Sycamore processor. The team showed that Sycamore could perform a specific random circuit sampling task in 200 seconds that would take the world's most powerful classical supercomputer an estimated 10,000 years to complete. This result was published in the journal Nature.",
       "key_facts": [
-        "53-qubit Sycamore processor",
-        "200 seconds that would take the world's most powerful classical supercomputer an estimated 10,000 years",
-        "published in the journal Nature"
+        "53-qubit",
+        "Sycamore",
+        "200 seconds",
+        "10,000 years",
+        "Nature"
       ],
       "relevant_doc_ids": ["02"],
       "difficulty": "easy",
@@ -28,12 +31,13 @@
     },
     {
       "id": "q03",
-      "question": "What is the purpose of the Variational Quantum Eigensolver (VQE) algorithm?",
+      "question": "What is the purpose of the Variational Quantum Eigensolver (VQE) algorithm, how does it operate, and what is its primary application?",
       "expected_answer": "The Variational Quantum Eigensolver (VQE) is a hybrid quantum-classical algorithm specifically designed for near-term quantum computers. It estimates the ground state energy of molecular systems by combining quantum state preparation on a quantum processor with classical optimization of variational parameters. VQE is particularly relevant for drug discovery, where understanding the electronic structure of molecules is essential for designing new pharmaceuticals.",
       "key_facts": [
-        "hybrid quantum-classical algorithm specifically designed for near-term quantum computers",
-        "estimates the ground state energy of molecular systems",
-        "particularly relevant for drug discovery"
+        "VQE",
+        "hybrid",
+        "ground state energy",
+        "drug discovery"
       ],
       "relevant_doc_ids": ["03"],
       "difficulty": "easy",
@@ -41,12 +45,14 @@
     },
     {
       "id": "q04",
-      "question": "How do the qubit connectivity capabilities of trapped ion systems compare to superconducting qubit platforms?",
+      "question": "How do the qubit connectivity capabilities and coherence times of trapped ion systems compare to superconducting qubit platforms?",
       "expected_answer": "Trapped ion systems offer significant connectivity advantages over superconducting platforms. The Quantinuum H2 processor features all-to-all qubit connectivity through its unique racetrack architecture, while superconducting platforms typically have limited nearest-neighbor connectivity. Additionally, trapped ion systems generally have longer coherence times, often exceeding several seconds compared to microseconds for superconducting systems.",
       "key_facts": [
-        "all-to-all qubit connectivity",
-        "superconducting platforms, which typically have limited nearest-neighbor connectivity",
-        "longer coherence times than superconducting qubits, often exceeding several seconds compared to microseconds for superconducting systems"
+        "all-to-all",
+        "racetrack",
+        "coherence times",
+        "superconducting",
+        "seconds"
       ],
       "relevant_doc_ids": ["02"],
       "difficulty": "medium",
@@ -57,9 +63,10 @@
       "question": "Trace the evolution from Shor's theoretical algorithm in 1994 to the practical threat it poses to RSA-2048, including what resources would be required to execute the attack.",
       "expected_answer": "Peter Shor developed his factoring algorithm in 1994 at AT&T Bell Laboratories, showing that a quantum computer could factor large integers in polynomial time, O((log N)^3). This directly threatens RSA encryption, which relies on the difficulty of factoring. The National Institute of Standards and Technology (NIST) has estimated that breaking RSA-2048 would require approximately 4,000 logical qubits with error correction. A fault-tolerant quantum computer capable of this would require millions of physical qubits, far beyond current hardware capabilities.",
       "key_facts": [
-        "AT&T Bell Laboratories",
-        "O((log N)^3)",
-        "approximately 4,000 logical qubits with error correction",
+        "Peter Shor",
+        "1994",
+        "RSA-2048",
+        "4,000 logical qubits",
         "millions of physical qubits"
       ],
       "relevant_doc_ids": ["01", "03"],
@@ -71,10 +78,12 @@
       "question": "What is the chronological progression of IBM's quantum processor milestones from 2021 to 2023?",
       "expected_answer": "IBM's quantum processor roadmap advanced significantly between 2021 and 2023. In November 2021, IBM unveiled its 127-qubit Eagle processor, which was the first quantum processor to break the 100-qubit barrier, using a new heavy-hex qubit layout. In December 2023, IBM announced the 1,121-qubit Condor processor, the first quantum processor to exceed 1,000 qubits.",
       "key_facts": [
-        "November 2021, IBM unveiled its 127-qubit Eagle processor",
-        "first quantum processor to break the 100-qubit barrier",
-        "December 2023, IBM announced the 1,121-qubit Condor processor",
-        "first quantum processor to exceed 1,000 qubits"
+        "Eagle",
+        "127-qubit",
+        "November 2021",
+        "Condor",
+        "1,121-qubit",
+        "December 2023"
       ],
       "relevant_doc_ids": ["02"],
       "difficulty": "medium",
@@ -85,9 +94,11 @@
       "question": "Why does achieving fault-tolerant quantum computing require millions of physical qubits, and what experimental evidence supports that surface codes can work at scale?",
       "expected_answer": "Fault-tolerant quantum computing requires millions of physical qubits because of the overhead of quantum error correction. In the surface code, logical qubits are encoded across many physical qubits, with current estimates suggesting approximately 1,000 to 10,000 physical qubits per logical qubit. Since breaking RSA-2048 requires approximately 4,000 logical qubits, the total physical qubit requirement reaches into the millions. In December 2023, Google published a landmark result in Nature demonstrating that increasing the size of its surface code from distance-3 to distance-5 reduced the logical error rate by a factor of 2, providing the first experimental evidence that surface code error correction can improve with scale.",
       "key_facts": [
-        "approximately 1,000 to 10,000 physical qubits per logical qubit",
-        "approximately 4,000 logical qubits with error correction",
-        "increasing the size of its surface code from distance-3 to distance-5 reduced the logical error rate by a factor of 2"
+        "surface code",
+        "1,000 to 10,000",
+        "distance-3",
+        "distance-5",
+        "factor of 2"
       ],
       "relevant_doc_ids": ["03"],
       "difficulty": "medium-hard",
@@ -98,9 +109,13 @@
       "question": "How does Grover's algorithm impact the security of both symmetric and asymmetric cryptographic systems differently?",
       "expected_answer": "Grover's algorithm affects symmetric and asymmetric cryptography in fundamentally different ways. For symmetric cryptography, Grover's algorithm provides a quadratic speedup that effectively halves key security: a 256-bit AES key would offer only 128 bits of security against a quantum adversary. For asymmetric systems like RSA, the threat comes not from Grover's algorithm but from Shor's algorithm, which can factor large integers in polynomial time and would completely break RSA-2048. This is why NIST finalized its first set of post-quantum cryptography standards in August 2024, selecting algorithms based on lattice-based and hash-based mathematical problems.",
       "key_facts": [
-        "256-bit AES key would offer only 128 bits of security against a quantum adversary using Grover's algorithm",
-        "Shor's algorithm can factor large integers in polynomial time",
-        "NIST finalized its first set of post-quantum cryptography standards in August 2024"
+        "Grover",
+        "quadratic speedup",
+        "AES-256",
+        "Shor",
+        "polynomial time",
+        "NIST",
+        "August 2024"
       ],
       "relevant_doc_ids": ["01", "03"],
       "difficulty": "medium-hard",
@@ -108,13 +123,15 @@
     },
     {
       "id": "q09",
-      "question": "Considering both the theoretical speedups promised by quantum algorithms and the current state of hardware, analyze why drug discovery is considered one of the most promising near-term applications of quantum computing.",
-      "expected_answer": "Drug discovery is promising because it sits at the intersection of quantum computing's theoretical strengths and practical needs. VQE, a hybrid quantum-classical algorithm specifically designed for near-term quantum computers, estimates the ground state energy of molecular systems — electronic structures of molecules that are essential for drug development. caffeine molecule (C8H10N4O2), which has 95 electrons, is already beyond classical reach. Companies like Roche, Biogen, and Merck are actively building programs. Trap ion gate fidelities exceeding 99.5% and superconducting processors like Eagle and Condor are leading this transition.",
+      "question": "Considering the theoretical speedups of VQE (simulating caffeine's 95 electrons) and modern hardware scaling (like IBM's Eagle/Condor and 99.5% gate fidelities), analyze why drug discovery is a promising near-term application of quantum computing.",
+      "expected_answer": "Drug discovery is promising because it sits at the intersection of quantum computing's theoretical strengths and practical needs. VQE, a hybrid quantum-classical algorithm specifically designed for near-term quantum computers, estimates the ground state energy of molecular systems — essential for understanding drug-molecule interactions. The computational challenge is real: simulating the behavior of the caffeine molecule (C8H10N4O2), which has 95 electrons, is already beyond the reach of exact classical simulation methods. Companies including Roche, Biogen, and Merck have initiated quantum computing research programs. Meanwhile, near-term hardware like IBM's 127-qubit Eagle and 1,121-qubit Condor processors, along with trapped ion systems with two-qubit gate fidelities exceeding 99.5%, are approaching the capability needed for meaningful molecular simulations.",
       "key_facts": [
-        "hybrid quantum-classical algorithm specifically designed for near-term quantum computers",
-        "caffeine molecule (C8H10N4O2), which has 95 electrons, is already beyond the reach of exact classical simulation methods",
-        "Roche, Biogen, and Merck have initiated quantum computing research programs",
-        "two-qubit gate fidelities exceeding 99.5%"
+        "drug discovery",
+        "caffeine",
+        "95 electrons",
+        "Eagle",
+        "Condor",
+        "99.5%"
       ],
       "relevant_doc_ids": ["02", "03"],
       "difficulty": "hard",
@@ -122,15 +139,16 @@
     },
     {
       "id": "q10",
-      "question": "Synthesizing across the history, hardware, and algorithms of quantum computing, explain how the DiVincenzo criteria from 2000 map onto the strengths and weaknesses of modern quantum hardware platforms in achieving fault-tolerant quantum computation.",
+      "question": "Synthesizing history and hardware, explain how the DiVincenzo criteria from 2000 map onto modern hardware specifications (like IBM's Eagle/Condor, trapped ion coherence times in seconds, and the 1,000 to 10,000 physical-to-logical qubit ratio needed for fault tolerance).",
       "expected_answer": "The DiVincenzo criteria require: (1) scalable qubits, (2) state initialization, (3) long decoherence times relative to gate times, (4) universal gate sets, and (5) qubit-specific measurement. Modern platforms address these differently. For scalability (criterion 1), IBM's progression from 127-qubit Eagle to 1,121-qubit Condor demonstrates superconducting scaling, while QuEra demonstrated a 256-qubit neutral atom processor. For decoherence (criterion 3), trapped ion systems excel with coherence times exceeding several seconds compared to microseconds for superconducting systems. For gate quality (criterion 4), IonQ's trapped ions achieve two-qubit gate fidelities exceeding 99.5%. Microsoft's topological qubits aim to satisfy criterion 3 inherently through hardware-protected qubits. However, achieving fault-tolerant computation still requires approximately 1,000 to 10,000 physical qubits per logical qubit via surface codes, showing that no platform yet fully satisfies all criteria at the scale needed.",
       "key_facts": [
-        "scalable physical system with well-characterized qubits",
-        "long relevant decoherence times, much longer than the gate operation time",
-        "a universal set of quantum gates",
-        "1,121-qubit Condor processor",
-        "coherence times, often exceeding several seconds compared to microseconds for superconducting systems",
-        "approximately 1,000 to 10,000 physical qubits per logical qubit"
+        "DiVincenzo",
+        "2000",
+        "Eagle",
+        "Condor",
+        "coherence times",
+        "seconds",
+        "1,000 to 10,000"
       ],
       "relevant_doc_ids": ["01", "02", "03"],
       "difficulty": "hard",
@@ -141,11 +159,13 @@
       "question": "What breakthrough did the collaboration led by Harvard, QuEra, and MIT demonstrate in December 2023, and what were its key specifications?",
       "expected_answer": "In December 2023, a scientific collaboration led by Harvard University, QuEra Computing, MIT, and the University of Maryland demonstrated a programmable logical quantum processor capable of preparing and manipulating up to 48 logical qubits. The platform utilized arrays of rubidium-87 atoms trapped in optical tweezers, achieving physical two-qubit gate fidelities of 99.5% with up to 280 physical atoms.",
       "key_facts": [
-        "A quantum processor with reconfigurable neutral atoms",
-        "preparing and manipulating up to 48 logical qubits",
-        "rubidium-87 atoms trapped in optical tweezers",
-        "physical two-qubit gate fidelities of 99.5%",
-        "up to 280 physical atoms"
+        "Harvard",
+        "QuEra",
+        "MIT",
+        "48 logical qubits",
+        "rubidium-87",
+        "99.5%",
+        "280 physical atoms"
       ],
       "relevant_doc_ids": ["04"],
       "difficulty": "medium",
@@ -156,12 +176,12 @@
       "question": "What are the three post-quantum cryptographic standards finalized by NIST in August 2024, and what are their functions?",
       "expected_answer": "In August 2024, NIST finalized its first three post-quantum cryptographic standards: FIPS 203 (ML-KEM), derived from CRYSTALS-Kyber, is the primary standard for general encryption; FIPS 204 (ML-DSA), derived from CRYSTALS-Dilithium, is the primary standard for general digital signatures; and FIPS 205 (SLH-DSA), derived from SPHINCS+, is a backup stateless hash-based digital signature standard.",
       "key_facts": [
-        "FIPS 203 (ML-KEM)",
-        "derived from the CRYSTALS-Kyber algorithm",
-        "FIPS 204 (ML-DSA)",
-        "derived from the CRYSTALS-Dilithium algorithm",
-        "FIPS 205 (SLH-DSA)",
-        "derived from the SPHINCS+ algorithm"
+        "FIPS 203",
+        "ML-KEM",
+        "FIPS 204",
+        "ML-DSA",
+        "FIPS 205",
+        "SLH-DSA"
       ],
       "relevant_doc_ids": ["05"],
       "difficulty": "medium",
@@ -172,12 +192,11 @@
       "question": "How do Zero-Noise Extrapolation (ZNE) and Probabilistic Error Cancellation (PEC) mitigate noise in quantum systems, and what are their trade-offs?",
       "expected_answer": "Zero-Noise Extrapolation (ZNE) and Probabilistic Error Cancellation (PEC) are quantum error mitigation techniques. ZNE artificially scales noise by stretching control pulses or inserting redundant gates, measuring expectation values at different noise scales, and extrapolating back to the zero-noise limit. PEC characterizes the system's noise model and represents ideal gates as a quasi-probability distribution over noisy operations, but incurs an exponential increase in the number of required circuit runs.",
       "key_facts": [
-        "Zero-Noise Extrapolation (ZNE)",
-        "stretching the duration of control pulses or inserting redundant pairs of identity gates",
-        "extrapolating back to the theoretical zero-noise limit",
-        "Probabilistic Error Cancellation (PEC)",
-        "quasi-probability distribution over a set of noisy operations",
-        "exponential increase in the number of required circuit runs"
+        "Zero-Noise Extrapolation",
+        "ZNE",
+        "Probabilistic Error Cancellation",
+        "PEC",
+        "exponential"
       ],
       "relevant_doc_ids": ["06"],
       "difficulty": "medium-hard",
@@ -186,13 +205,15 @@
     {
       "id": "q14",
       "question": "What are Optically Pumped Magnetometers (OPMs), and what advantages do they offer over cryogenic SQUIDs for Magnetoencephalography (MEG) applications?",
-      "expected_answer": "Optically Pumped Magnetometers (OPMs) contain a glass vapor cell filled with alkali gas (such as rubidium-87 or cesium-133) and use a circularly polarized laser beam to pump atoms into a spin-polarized state. OPMs offer sensitivities comparable to cryogenic SQUIDs (< 10 fT/√Hz) but operate at room temperature. This eliminates the need for liquid helium cooling, allowing OPMs to be placed directly on the scalp in wearable MEG helmets that permit subject movement.",
+      "expected_answer": "Optically Pumped Magnetometers (OPMs) contain a glass vapor cell filled with alkali gas (such as rubidium-87 or cesium-133) and use a circularly polarized laser beam to pump atoms into a spin-polarized state. OPMs offer sensitivities comparable to cryogenic SQUIDs (< 10 fT/vHz) but operate at room temperature. This eliminates the need for liquid helium cooling, allowing OPMs to be placed directly on the scalp in wearable MEG helmets that permit subject movement.",
       "key_facts": [
-        "Optically Pumped Magnetometers (OPMs)",
-        "glass vapor cell filled with an alkali gas (such as rubidium-87 or cesium-133)",
-        "sensitivities comparable to cryogenic SQUIDs ($< 10 \\text{ fT}/\\sqrt{\\text{Hz}}$)",
-        "do not require cryogenic cooling",
-        "placed directly on a patient's scalp, allowing for lightweight, wearable MEG helmets that permit subject movement"
+        "Optically Pumped Magnetometers",
+        "OPMs",
+        "rubidium-87",
+        "cesium-133",
+        "SQUIDs",
+        "room temperature",
+        "wearable"
       ],
       "relevant_doc_ids": ["07"],
       "difficulty": "medium-hard",
@@ -203,11 +224,11 @@
       "question": "Why is the biological synthesis of ammonia using the nitrogenase enzyme's FeMoco catalyst an important target for quantum simulation, and what are the resource requirements for simulating it?",
       "expected_answer": "Industrial ammonia synthesis via the Haber-Bosch process consumes 1% to 2% of the world's energy and accounts for 1.4% of carbon dioxide emissions. The biological nitrogenase enzyme fixes nitrogen at ambient conditions using the FeMoco ($[MoFe_7S_9C]$) catalyst, which cannot be simulated classically. A quantum computer running Quantum Phase Estimation (QPE) could simulate the FeMoco active space using approximately 111 logical qubits and a circuit depth of 10^9 gates, potentially enabling the design of energy-saving biomimetic catalysts.",
       "key_facts": [
-        "Haber-Bosch process",
-        "consumes approximately 1% to 2% of the world’s annual energy supply",
-        "accounts for nearly 1.4% of global carbon dioxide emissions",
-        "FeMoco ($[MoFe_7S_9C]$)",
-        "approximately 111 logical qubits and a circuit depth of $10^9$ gates"
+        "FeMoco",
+        "Haber-Bosch",
+        "111 logical qubits",
+        "10^9 gates",
+        "nitrogenase"
       ],
       "relevant_doc_ids": ["08"],
       "difficulty": "hard",
