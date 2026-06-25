@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "generic-rag-framework"
+version = "1.0.0"
+description = "A domain-agnostic, provider-agnostic Retrieval-Augmented Generation framework with multi-dimensional evaluation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "google-genai>=1.0.0",
+    "groq>=0.9.0",
+    "openai>=1.30.0",
+    "httpx>=0.27.0",
+    "sentence-transformers>=3.0.0",
+    "torch>=2.0.0",
+    "chromadb>=0.5.0",
+    "langchain-text-splitters>=0.3.0",
+    "rouge-score>=0.1.2",
+    "scikit-learn>=1.5.0",
+    "numpy>=1.26.0",
+    "python-dotenv>=1.0.0",
+    "rich>=13.0.0",
+]
+
+[project.scripts]
+generic-rag = "app:main"
+generic-rag-eval = "evaluation.run_evaluation:main"
