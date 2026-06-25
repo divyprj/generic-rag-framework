@@ -646,9 +646,9 @@ def main() -> None:
     csv_path = _write_csv(results)
     md_path = _write_markdown(results, aggregates)
 
-    console.print(f"\n[green]✓[/green] JSON report → [cyan]{json_path}[/cyan]")
-    console.print(f"[green]✓[/green] CSV report  → [cyan]{csv_path}[/cyan]")
-    console.print(f"[green]✓[/green] MD report   → [cyan]{md_path}[/cyan]")
+    console.print(f"\n[green][OK][/green] JSON report -> [cyan]{json_path}[/cyan]")
+    console.print(f"[green][OK][/green] CSV report  -> [cyan]{csv_path}[/cyan]")
+    console.print(f"[green][OK][/green] MD report   -> [cyan]{md_path}[/cyan]")
 
     # ── 7. Optional human evaluation ─────────────────────────────────────
     if args.human:
