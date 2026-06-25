@@ -7,7 +7,7 @@ set "DATASET=%~1"
 set "PROVIDER=%~2"
 set "EXTRA_ARGS="
 
-if "%DATASET%"=="" set "DATASET=mars"
+if "%DATASET%"=="" set "DATASET=quantum"
 if "%PROVIDER%"=="" set "PROVIDER=groq"
 
 for %%A in (%*) do (

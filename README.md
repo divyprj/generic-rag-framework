@@ -133,10 +133,10 @@ EDXSO/
 │   │   │   ├── 02_spirit_opportunity.md
 │   │   │   └── ...
 │   │   └── qa_dataset.json            # 15 Q&A pairs with metadata
-│   └── quantum/                       # Quantum Computing dataset
+│   └── quantum/                       # Quantum Computing dataset (Default)
 │       ├── dataset.json
-│       ├── documents/                 # 3 curated Markdown documents
-│       └── qa_dataset.json            # 10 Q&A pairs with metadata
+│       ├── documents/                 # 8 curated Markdown documents
+│       └── qa_dataset.json            # 15 Q&A pairs with metadata
 ├── src/
 │   ├── __init__.py
 │   ├── config.py                      # Central config + DatasetConfig
@@ -292,30 +292,29 @@ The framework automatically:
 
 ## Dataset Design
 
-### Domain: Mars Exploration Missions
+### Domain: History of Quantum Computing
 
-The dataset covers **the complete history of Mars exploration** from the earliest Soviet missions in the 1960s through planned future missions. This domain was chosen because:
+The dataset covers **the complete evolution of quantum information science** from Richard Feynman's initial 1981 proposal through modern hardware achievements, software ecosystems, error correction, post-quantum security, sensing, and chemistry simulations. This domain was chosen because:
 
-- **Factual density**: Rich with specific dates, names, measurements, and technical specifications
-- **Multi-document relationships**: Missions reference each other (e.g., Perseverance collects samples for Mars Sample Return)
-- **Temporal ordering**: Clear chronological progression enables temporal reasoning questions
-- **Comparison potential**: Multiple rovers/landers with different designs and objectives
-- **Niche but verifiable**: Specific enough to avoid generic answers, yet all facts are publicly verifiable
+- **Factual density**: Rich with specific dates, names, qubit metrics, and scientific formulations.
+- **Multi-document relationships**: Hardware platforms (superconducting vs trapped ion) relate directly to error correction surface codes and algorithm constraints (like Shor's algorithm breaking RSA).
+- **Temporal ordering**: Clear chronological progression from early mathematical theories in the 1980s to actual physical processors and future post-quantum migration deadlines.
+- **Comparison potential**: Diverse competing physical hardware platforms (trapped ions, superconducting qubits, neutral atoms) and algorithms (VQE vs Shor's phase estimation).
 
 ### Document Corpus
 
-| # | Document | Topic | Words | Key Entities |
-|---|----------|-------|-------|--------------|
-| 01 | Early Mars Missions | 1960s-1990s: Mariner, Viking, Pathfinder | ~1,100 | Mariner 4, Viking 1&2, Sojourner |
-| 02 | Spirit & Opportunity | MER mission 2004-2018 | ~1,050 | Gusev Crater, Meridiani Planum, hematite |
-| 03 | Curiosity Rover | MSL mission 2012-present | ~1,100 | Gale Crater, SAM, methane, Mount Sharp |
-| 04 | Perseverance & Ingenuity | Mars 2020 mission | ~1,070 | Jezero Crater, MOXIE, Ingenuity, sample caching |
-| 05 | Phoenix & InSight | Stationary landers | ~1,250 | Water ice, SEIS, marsquakes, core structure |
-| 06 | Mars Orbiters | Orbital missions | ~1,330 | MRO, MAVEN, HiRISE, atmospheric escape |
-| 07 | ESA ExoMars | European program | ~1,280 | TGO, Schiaparelli, Rosalind Franklin |
-| 08 | Future Missions | Planned missions | ~1,340 | Mars Sample Return, Starship, Tianwen-3 |
+| # | Document | Topic | Words | Key Entities / Concepts |
+|---|----------|-------|-------|-------------------------|
+| 01 | Foundations of Quantum Computing | Origins: 1980s-2000s | ~760 | Richard Feynman (1981), David Deutsch (1985), DiVincenzo Criteria (2000) |
+| 02 | Quantum Hardware Platforms | Physical implementation technologies | ~820 | Superconducting qubits (IBM, Google Sycamore), Trapped ions, Neutral atoms |
+| 03 | Quantum Algorithms and Applications | Primary algorithms and near-term use | ~920 | Shor's algorithm (1994), Grover's search (1996), VQE for chemistry |
+| 04 | Quantum Error Correction & Fault Tolerance | QEC architectures and scale milestones | ~770 | Logical vs physical qubits, surface codes, Google's 2023 distance-5 results |
+| 05 | Quantum Cryptography and Security | Quantum key distribution & post-quantum standards | ~790 | Post-Quantum Cryptography (PQC), NIST 2024 standards (ML-KEM, ML-DSA), BB84 |
+| 06 | Quantum Software and Programming | Development frameworks and compilation | ~760 | Qiskit, Cirq, OpenQASM, Zero-Noise Extrapolation (ZNE), error mitigation |
+| 07 | Quantum Sensing and Metrology | Precision metrology and sensors | ~780 | NV Centers in diamond, atomic clocks, SQUIDs, gravimeters |
+| 08 | Quantum Materials & Chemistry Sim. | Molecular and physical lattice modeling | ~780 | Fermi-Hubbard model, FeMoco catalyst active space (54 electrons/orbitals), VQE |
 
-**Total corpus size**: ~9,500 words across 8 documents
+**Total corpus size**: ~6,400 words across 8 documents (each 1-2 pages in length).
 
 ### Question-Answer Dataset
 

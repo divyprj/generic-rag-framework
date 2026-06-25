@@ -6,7 +6,7 @@ rem Usage: evaluate.bat [dataset] [provider]
 set "DATASET=%~1"
 set "PROVIDER=%~2"
 
-if "%DATASET%"=="" set "DATASET=mars"
+if "%DATASET%"=="" set "DATASET=quantum"
 if "%PROVIDER%"=="" set "PROVIDER=groq"
 
 echo.

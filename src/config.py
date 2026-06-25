@@ -73,7 +73,7 @@ FALLBACK_PROVIDERS: list[str] = [
 # ──────────────────────────────────────────────
 # Defaults
 # ──────────────────────────────────────────────
-DEFAULT_DATASET: str = "mars"
+DEFAULT_DATASET: str = "quantum"
 
 
 # ──────────────────────────────────────────────

@@ -109,7 +109,7 @@
     {
       "id": "q09",
       "question": "Considering both the theoretical speedups promised by quantum algorithms and the current state of hardware, analyze why drug discovery is considered one of the most promising near-term applications of quantum computing.",
-      "expected_answer": "Drug discovery is promising because it sits at the intersection of quantum computing's theoretical strengths and practical needs. VQE, a hybrid quantum-classical algorithm specifically designed for near-term quantum computers, estimates the ground state energy of molecular systems — essential for understanding drug-molecule interactions. The computational challenge is real: simulating the behavior of the caffeine molecule (C8H10N4O2), which has 95 electrons, is already beyond the reach of exact classical simulation methods. Companies including Roche, Biogen, and Merck have initiated quantum computing research programs. Meanwhile, near-term hardware like IBM's 127-qubit Eagle and 1,121-qubit Condor processors, along with trapped ion systems with two-qubit gate fidelities exceeding 99.5%, are approaching the capability needed for meaningful molecular simulations.",
+      "expected_answer": "Drug discovery is promising because it sits at the intersection of quantum computing's theoretical strengths and practical needs. VQE, a hybrid quantum-classical algorithm specifically designed for near-term quantum computers, estimates the ground state energy of molecular systems — electronic structures of molecules that are essential for drug development. caffeine molecule (C8H10N4O2), which has 95 electrons, is already beyond classical reach. Companies like Roche, Biogen, and Merck are actively building programs. Trap ion gate fidelities exceeding 99.5% and superconducting processors like Eagle and Condor are leading this transition.",
       "key_facts": [
         "hybrid quantum-classical algorithm specifically designed for near-term quantum computers",
         "caffeine molecule (C8H10N4O2), which has 95 electrons, is already beyond the reach of exact classical simulation methods",
@@ -133,6 +133,83 @@
         "approximately 1,000 to 10,000 physical qubits per logical qubit"
       ],
       "relevant_doc_ids": ["01", "02", "03"],
+      "difficulty": "hard",
+      "type": "reasoning"
+    },
+    {
+      "id": "q11",
+      "question": "What breakthrough did the collaboration led by Harvard, QuEra, and MIT demonstrate in December 2023, and what were its key specifications?",
+      "expected_answer": "In December 2023, a scientific collaboration led by Harvard University, QuEra Computing, MIT, and the University of Maryland demonstrated a programmable logical quantum processor capable of preparing and manipulating up to 48 logical qubits. The platform utilized arrays of rubidium-87 atoms trapped in optical tweezers, achieving physical two-qubit gate fidelities of 99.5% with up to 280 physical atoms.",
+      "key_facts": [
+        "A quantum processor with reconfigurable neutral atoms",
+        "preparing and manipulating up to 48 logical qubits",
+        "rubidium-87 atoms trapped in optical tweezers",
+        "physical two-qubit gate fidelities of 99.5%",
+        "up to 280 physical atoms"
+      ],
+      "relevant_doc_ids": ["04"],
+      "difficulty": "medium",
+      "type": "factual"
+    },
+    {
+      "id": "q12",
+      "question": "What are the three post-quantum cryptographic standards finalized by NIST in August 2024, and what are their functions?",
+      "expected_answer": "In August 2024, NIST finalized its first three post-quantum cryptographic standards: FIPS 203 (ML-KEM), derived from CRYSTALS-Kyber, is the primary standard for general encryption; FIPS 204 (ML-DSA), derived from CRYSTALS-Dilithium, is the primary standard for general digital signatures; and FIPS 205 (SLH-DSA), derived from SPHINCS+, is a backup stateless hash-based digital signature standard.",
+      "key_facts": [
+        "FIPS 203 (ML-KEM)",
+        "derived from the CRYSTALS-Kyber algorithm",
+        "FIPS 204 (ML-DSA)",
+        "derived from the CRYSTALS-Dilithium algorithm",
+        "FIPS 205 (SLH-DSA)",
+        "derived from the SPHINCS+ algorithm"
+      ],
+      "relevant_doc_ids": ["05"],
+      "difficulty": "medium",
+      "type": "factual"
+    },
+    {
+      "id": "q13",
+      "question": "How do Zero-Noise Extrapolation (ZNE) and Probabilistic Error Cancellation (PEC) mitigate noise in quantum systems, and what are their trade-offs?",
+      "expected_answer": "Zero-Noise Extrapolation (ZNE) and Probabilistic Error Cancellation (PEC) are quantum error mitigation techniques. ZNE artificially scales noise by stretching control pulses or inserting redundant gates, measuring expectation values at different noise scales, and extrapolating back to the zero-noise limit. PEC characterizes the system's noise model and represents ideal gates as a quasi-probability distribution over noisy operations, but incurs an exponential increase in the number of required circuit runs.",
+      "key_facts": [
+        "Zero-Noise Extrapolation (ZNE)",
+        "stretching the duration of control pulses or inserting redundant pairs of identity gates",
+        "extrapolating back to the theoretical zero-noise limit",
+        "Probabilistic Error Cancellation (PEC)",
+        "quasi-probability distribution over a set of noisy operations",
+        "exponential increase in the number of required circuit runs"
+      ],
+      "relevant_doc_ids": ["06"],
+      "difficulty": "medium-hard",
+      "type": "comparison"
+    },
+    {
+      "id": "q14",
+      "question": "What are Optically Pumped Magnetometers (OPMs), and what advantages do they offer over cryogenic SQUIDs for Magnetoencephalography (MEG) applications?",
+      "expected_answer": "Optically Pumped Magnetometers (OPMs) contain a glass vapor cell filled with alkali gas (such as rubidium-87 or cesium-133) and use a circularly polarized laser beam to pump atoms into a spin-polarized state. OPMs offer sensitivities comparable to cryogenic SQUIDs (< 10 fT/√Hz) but operate at room temperature. This eliminates the need for liquid helium cooling, allowing OPMs to be placed directly on the scalp in wearable MEG helmets that permit subject movement.",
+      "key_facts": [
+        "Optically Pumped Magnetometers (OPMs)",
+        "glass vapor cell filled with an alkali gas (such as rubidium-87 or cesium-133)",
+        "sensitivities comparable to cryogenic SQUIDs ($< 10 \\text{ fT}/\\sqrt{\\text{Hz}}$)",
+        "do not require cryogenic cooling",
+        "placed directly on a patient's scalp, allowing for lightweight, wearable MEG helmets that permit subject movement"
+      ],
+      "relevant_doc_ids": ["07"],
+      "difficulty": "medium-hard",
+      "type": "comparison"
+    },
+    {
+      "id": "q15",
+      "question": "Why is the biological synthesis of ammonia using the nitrogenase enzyme's FeMoco catalyst an important target for quantum simulation, and what are the resource requirements for simulating it?",
+      "expected_answer": "Industrial ammonia synthesis via the Haber-Bosch process consumes 1% to 2% of the world's energy and accounts for 1.4% of carbon dioxide emissions. The biological nitrogenase enzyme fixes nitrogen at ambient conditions using the FeMoco ($[MoFe_7S_9C]$) catalyst, which cannot be simulated classically. A quantum computer running Quantum Phase Estimation (QPE) could simulate the FeMoco active space using approximately 111 logical qubits and a circuit depth of 10^9 gates, potentially enabling the design of energy-saving biomimetic catalysts.",
+      "key_facts": [
+        "Haber-Bosch process",
+        "consumes approximately 1% to 2% of the world’s annual energy supply",
+        "accounts for nearly 1.4% of global carbon dioxide emissions",
+        "FeMoco ($[MoFe_7S_9C]$)",
+        "approximately 111 logical qubits and a circuit depth of $10^9$ gates"
+      ],
+      "relevant_doc_ids": ["08"],
       "difficulty": "hard",
       "type": "reasoning"
     }
