@@ -14,7 +14,9 @@ A domain-agnostic, **provider-agnostic** Retrieval-Augmented Generation framewor
 
 ## 🎥 Demo Video
 
-[![Generic RAG Framework Walkthrough](https://img.shields.io/badge/YouTube-Watch%20Demo%20Video-red?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/IPkZDiV91A8)
+[![YouTube - Watch Demo](https://img.shields.io/badge/YouTube-Watch%20Demo%20Video-red?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/IPkZDiV91A8)
+&nbsp;&nbsp;
+[![Google Drive - Download Mirror](https://img.shields.io/badge/Google_Drive-Download/Mirror-blue?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/1-UbxLh9e9ie-h-Ht5iuNadUQO-yHc6E-/view?usp=sharing)
 
 Watch the complete walkthrough demonstrating interactive CLI queries, provider/dataset swapping, and the multi-dimensional evaluation pipeline in action.
 
